@@ -2,14 +2,32 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Hello, World!</title>
+		<title>Stock Ticker App</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div>
-  			<h1>Hello, World!</h1>
+  			<h1>User Input</h1>
+        
+        Please enter a stock ticker, e.g. GOOG, to check the history of one of the metrics below.
+        
+        <form id='user_input_form' method='post' action='index'>
+        <p>
+        Ticker symbol: <input type='text' name='ticker_symbol'/>
+        </br>
+        </p>
+        <p>
+        <input type='radio' name='metric' value='open' />Opening Price</br>
+        <input type='radio' name='metric' value='adj_open' />Adjusted Opening Price</br>
+        <input type='radio' name='metric' value='close' />Closing Price</br>
+        <input type='radio' name='metric' value='adj_close' />Adjusted Closing Price</br>
+
+        <input type='submit' value='Submit'>
+        </p>
+        </form>
+        
 		</div>
 	</body>
 </html>
